@@ -20,7 +20,7 @@ function init(bundle, parent, options = {}) {
   r360.renderToSurface(r360.createRoot("ConnectedHouseInfoPanel"), infoPanel);
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL("360_front_door.jpg"));
+  r360.compositor.setBackground(r360.getAssetURL("Haunted11.jpg"));
 }
 
 window.React360 = { init };

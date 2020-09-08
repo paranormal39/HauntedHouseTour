@@ -1,21 +1,29 @@
 export default house = {
   House: {
-    roomName: 'House',
+    roomName: 'spooky',
     info: `
-      * 4 bedroom
-      * 3 bath
-      * Priced at $180,000`,
-    adjacentRooms: ['Foyer'],
+      * This empty building has had haunted activity
+      * Now this building has been abadoned for 40 years
+      * it currently sits abandonded`,
+    adjacentRooms: ['Enterance','Haunted08'],
   },
-  Foyer: {
-    roomName: 'Foyer' ,
+  Haunted08:{
+    roomName: 'Haunted08',
+    info:`
+    * We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'haunted08.jpg',
+    adjacentRooms:['Haunted09','Haunted10']
+  },
+  Enterance: {
+    roomName: 'Enterance' ,
     info: `
       * Wrought iron front door.
       * Elegant etched glass inserts for privacy.
       * Beautiful acrylic chandelier with LED lights.
       * Hall closet for guest's coats and purses or for media storage.
       * Classic non-skid ceramic tile floor.`,
-    img: 'foyer.jpg',
+    img: 'Haunted08.jpg',
     adjacentRooms: ['Dining_Room', 'Living_Room']
   },
   Dining_Room: {
@@ -26,7 +34,7 @@ export default house = {
       * Wrought iron window for added security.
       * Direct acces to kitchen for convenience.
       * Beautiful tile floor.`,
-    img: 'dining_room.jpg',
+    img: 'Haunted09.jpg',
     adjacentRooms: ['Kitchen', 'Foyer']
   },
   Kitchen: {
