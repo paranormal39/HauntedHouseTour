@@ -1,6 +1,7 @@
 import React from "react";
 import { asset, Environment } from "react-360";
 import house from "./data/houseData";
+import houseData from "./data/houseData";
 
 const State = {
   room: house.House.roomName,
@@ -23,7 +24,7 @@ export function changeRoom(roomSelection) {
   State.info = house[`${roomName}`].info;
   State.adjacentRooms = house[`${roomName}`].adjacentRooms;
 
-  Environment.setBackgroundImage(asset(`./360_${house[`${roomName}`].img}`));
+  Environment.setBackgroundImage(asset(`./${house[`${roomName}`].img}`));
 
   updateComponents();
 }
