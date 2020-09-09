@@ -10,11 +10,83 @@ export default house = {
   Haunted08:{
     roomName: 'Haunted08',
     info:`
-    * We enter the building not relizing that the floor had been ripped out
+     We enter the building not relizing that the floor had been ripped out
     `,
     img:'haunted08.jpg',
     adjacentRooms:['Haunted09','Haunted10']
   },
+  Haunted09:{
+    roomName: 'Haunted09',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted09.jpg',
+    adjacentRooms:['Haunted09','Haunted10',]
+  },
+  Haunted10:{
+    roomName: 'Foutain',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted10.jpg',
+    adjacentRooms:['Haunted09','Haunted07']
+  },
+  Haunted07:{
+    roomName: 'Haunted07',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted07.jpg',
+    adjacentRooms:['Haunted06','Haunted05']
+  },
+  Haunted06:{
+    roomName: 'Haunted06',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted06.jpg',
+    adjacentRooms:['Haunted04','Haunted05']
+  }, Haunted05:{
+    roomName: 'Ladder',
+    info:`
+     The ladder stuck out so we decided to climb it
+    `,
+    img:'Haunted05.jpg',
+    adjacentRooms:['Haunted03','Haunted04']
+  },
+  Haunted03:{
+    roomName: 'Haunted03',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted03.jpg',
+    adjacentRooms:['Haunted02','Haunted03']
+  },
+  Haunted02:{
+    roomName: 'Haunted02',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted02.jpg',
+    adjacentRooms:['Haunted01','Haunted03']
+  },
+  Haunted01:{
+    roomName: 'Haunted01',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted01.jpg',
+    adjacentRooms:['Haunted01','Haunted02','Haunted']
+  },
+  Haunted:{
+    roomName: 'Haunted',
+    info:`
+     We enter the building not relizing that the floor had been ripped out
+    `,
+    img:'Haunted.jpg',
+    adjacentRooms:['Haunted01','Haunted10']
+  },
+
   Enterance: {
     roomName: 'Enterance' ,
     info: `
