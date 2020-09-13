@@ -1,82 +1,96 @@
 export default house = {
   House: {
-    roomName: 'spooky',
+    roomName: 'Cabin',
     info: `
-      * This empty building has had haunted activity
-      * Now this building has been abadoned for 40 years
-      * it currently sits abandonded`,
-    adjacentRooms: ['Enterance','Haunted08'],
+       This empty building has had haunted activity
+       Now this building has been abandoned for 40 years
+       it currently sits waiting to be demolished`,
+    adjacentRooms: ['FrontDoor'],
   },
-  Haunted08:{
-    roomName: 'Haunted08',
+  FrontDoor:{
+    roomName: 'FrontDoor',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+     There are only two rooms one left one 
+     right which do you take
     `,
     img:'haunted08.jpg',
-    adjacentRooms:['Haunted09','Haunted10']
+    adjacentRooms:['LeftDoor','OutSideFoutain','RightDoor',]
   },
-  Haunted09:{
-    roomName: 'Haunted09',
+  LeftDoor:{
+    roomName: 'LeftDoor',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+    The Room is dark But the black Light
+    Reveals hidden graffiti art
     `,
     img:'Haunted09.jpg',
-    adjacentRooms:['Haunted09','Haunted10',]
+    adjacentRooms:['FrontDoor','LongHall']
   },
-  Haunted10:{
+  OutSideFoutain:{
     roomName: 'Foutain',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+    outside is a peaceful fountain that
+     is calm and smoothing
+
     `,
     img:'Haunted10.jpg',
-    adjacentRooms:['Haunted09','Haunted07']
+    adjacentRooms:['FrontDoor']
   },
-  Haunted07:{
-    roomName: 'Haunted07',
+  RightDoor:{
+    roomName: 'RightDoor',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+    as soon as we enter you immidetaly see 
+    another door straight head
     `,
     img:'Haunted07.jpg',
-    adjacentRooms:['Haunted06','Haunted05']
+    adjacentRooms:['MainRoom','FrontDoor']
   },
-  Haunted06:{
-    roomName: 'Haunted06',
+  LongHall:{
+    roomName: 'LongHall',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+     It is pitch black and hardly any floor 
     `,
     img:'Haunted06.jpg',
-    adjacentRooms:['Haunted04','Haunted05']
-  }, Haunted05:{
+    adjacentRooms:['LeftRoom02','LeftDoor']
+  }, Ladder:{
     roomName: 'Ladder',
     info:`
-     The ladder stuck out so we decided to climb it
+     The ladder was sturdy and lead somewhere 
     `,
     img:'Haunted05.jpg',
-    adjacentRooms:['Haunted03','Haunted04']
+    adjacentRooms:['UpperLevel','MainRoom']
   },
-  Haunted03:{
-    roomName: 'Haunted03',
+  UpperLevel:{
+    roomName: 'Upper Level',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+    Once we climbed the ladder we discover a horrifying face
     `,
     img:'Haunted03.jpg',
-    adjacentRooms:['Haunted02','Haunted03']
+    adjacentRooms:['MainRoom','FurtherDown']
   },
-  Haunted02:{
-    roomName: 'Haunted02',
+  LeftRoom02:{
+    roomName: 'Boogie Woogie BlackLight',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+     
+    We enter The Final room and are surprised 
+    with more blacklight art
     `,
     img:'Haunted02.jpg',
     adjacentRooms:['Haunted01','Haunted03']
   },
-  Haunted01:{
-    roomName: 'Haunted01',
+  MainRoom:{
+    roomName: 'MainRoom',
     info:`
-     We enter the building not relizing that the floor had been ripped out
+     We enter the Main Room of the building where 
+     we see a Ladder in a distance
     `,
     img:'Haunted01.jpg',
-    adjacentRooms:['Haunted01','Haunted02','Haunted']
+    adjacentRooms:['RightDoor','Ladder']
+  },
+  FurtherDown:{
+    roomName: 'Further Down',
+    info:'We come Across all Seeing Eye',
+    img:'Haunted04.jpg',
+    adjacentRooms:['UpperLevel']
   },
   Haunted:{
     roomName: 'Haunted',
@@ -87,187 +101,4 @@ export default house = {
     adjacentRooms:['Haunted01','Haunted10']
   },
 
-  Enterance: {
-    roomName: 'Enterance' ,
-    info: `
-      * Wrought iron front door.
-      * Elegant etched glass inserts for privacy.
-      * Beautiful acrylic chandelier with LED lights.
-      * Hall closet for guest's coats and purses or for media storage.
-      * Classic non-skid ceramic tile floor.`,
-    img: 'Haunted08.jpg',
-    adjacentRooms: ['Dining_Room', 'Living_Room']
-  },
-  Dining_Room: {
-    roomName: 'Dining_Room',
-    info:`
-      * Elegant chandelier with LED lights.
-      * Tiered high ceilings.
-      * Wrought iron window for added security.
-      * Direct acces to kitchen for convenience.
-      * Beautiful tile floor.`,
-    img: 'Haunted09.jpg',
-    adjacentRooms: ['Kitchen', 'Foyer']
-  },
-  Kitchen: {
-    roomName: 'Kitchen',
-    info: `
-      * Granite counter tops and backsplash (3/4 inch-thick Brazilian Giallo Fiesta).
-      * Custom-made island with end drawers and wine bottle storage.
-      * Samsung stainless steel appliances.
-      * Birchwood custom cabinets and pantry with elegant crown molding.
-      * Stainless steel 9" extra deep double sinks with pullout faucet and soap dispenser.
-      * Under cabinet and top of cabinet LED lights.`,
-    img: 'kitchen.jpg',
-    adjacentRooms: ['Living_Room','Breakfast_Nook']
-  },
-  Breakfast_Nook: {
-    roomName: 'Breakfast_Nook',
-    info: `
-      * Granite top custom-made cabinet
-      * Custom wine rack display and storage.
-      * Modern chandelier with LED lights.
-      * Easy access to backyard when entertaining.
-      * Open and spacious.
-    `,
-    img: 'breakfast_nook.jpg',
-    adjacentRooms: ['Backyard','Living_Room','Kitchen', 'Master_Bedroom', 'Laundry_Room']
-  },
-  Backyard: {
-    roomName: 'Backyard',
-    info: `
-      * Extra large back yard for playground or future pool.
-      * Sprinkler system.
-      * Beautiful fencing.
-      * Mature trees:
-        shade: oak, pecan, fresno, acacia, royal poinciana, ficus, ceiba
-        fruit: papaya, mango, limes.
-      * Entertaining and eating area for backyard barbeques.
-    `,
-    img: 'backyard.jpg',
-    adjacentRooms: ['Breakfast_Nook','Bedroom_One']
-  },
-  Master_Bedroom: {
-    roomName: 'Master_Bedroom',
-    info: `
-    * Extra large bedroom, allows for sitting area.
-    * Tiered cieling or architecture.
-    * Quiet ceiling fan and light fixture.
-    * Plush neutral taupe carpet.
-    * Sliding door for easy access to backyard.`,
-    img: 'master_bedroom.jpg',
-    adjacentRooms: ['Master_Bathroom','Breakfast_Nook']
-  },
-  Master_Bathroom:  {
-    roomName: 'Master_Bathroom',
-    info: `
-      * Custom glass shower enclosure.
-      * Porcelain bath tiles and travertine molding.
-      * Privacy glass block window.
-      * Relaxing garden tub with jets.
-      * Seperate toilet room for privacy with storage.
-      * Double extractor lighted vents.`,
-    img: 'master_bathroom.jpg',
-    adjacentRooms: ['Master_Bedroom', 'Master_Bathroom_Two']
-  },
-  Master_Bathroom_Two: {
-    roomName: 'Master_Bathroom_Two',
-    info: `
-      * Custom glass shower enclosure.
-      * Porcelain bath tiles and travertine molding.
-      * Privacy glass block window.
-      * Relaxing garden tub with jets.
-      * Seperate toilet room for privacy with storage.
-      * Double extractor lighted vents.`,
-    img: 'master_bathroom_two.jpg',
-    adjacentRooms: ['Master_Bathroom']
-  },
-  Living_Room: {
-    roomName: 'Living_Room',
-    info: `
-      * Informal sunken family room.
-      * Chimney with mantle.
-      * Remote controlled ceiling fans.
-      * Tiered ceiling.
-      * T.V. wall mount/media closet.`,
-    img: 'living_room.jpg',
-    adjacentRooms: ['Foyer', 'Breakfast_Nook', 'Bedroom_One', 'Bedroom_Two', 'Bedroom_Three','Bathroom_Two']
-  },
-  Bedroom_One: {
-    roomName: 'Bedroom_One',
-    info: `
-      * Spacious bright and airy room.
-      * Perect for guests or mother-in-law.
-      * Private bathroom.
-      * Built-in bookshelf with elegant crown molding.
-      * Large space and wood flooring.
-      * Decorative wainscott and chair rail modlings.
-    `,
-    img: 'bedroom_one.jpg',
-    adjacentRooms:['Bathroom_One','Backyard','Living_Room']
-  },
-  Bathroom_One: {
-    roomName: 'Bathroom_One',
-    info: `
-      * Granite vanity and custom beveled edge mirror.
-      * Vanity-Kohler sink and bath fixtures.
-      * Elongated Kohler water saver toilet.
-      * Kohler glass shower enclosure.
-      * Custom ceramic tile and decorative metallic borders.
-      * Large custom storage closet.`,
-    img: 'bathroom_one.jpg',
-    adjacentRooms: ['Bedroom_One']
-  },
-  Bathroom_Two: {
-    roomName: 'Bathroom_Two',
-    info: `
-      * Marble vanity top with custom beveled-edge mirror.
-      * Elegant Kohler sink and bath fixtures.
-      * Elongated Kohler water-saver toilet.
-      * Custom large storage closet with extra deep shelves.
-      * Beautiful ceramic tile shower surround.
-      * Kohler glass shower enclosure.`,
-    img: 'bathroom_two.jpg',
-    adjacentRooms: ['Living_Room', 'Bedroom_Two', 'Bedroom_Three']
-  },
-  Bedroom_Two: {
-    roomName: 'Bedroom_Two',
-    info: `
-      * Large spacious room for 2-twin or 1-queen bedroom.
-      * Neutral taupe plush carpet.
-      * Wrought iron window for added security.
-      * Two closets.
-      * Custom shelving and cabinet.
-    `,
-    img: 'bedroom_two.jpg',
-    adjacentRooms: ['Bedroom_Three','Bathroom_Two']
-  },
-  Bedroom_Three: {
-    roomName: 'Bedroom_Three',
-    info: `
-      * Large spacious room enough for 2 twin or 1 queen size bed.
-      * Lighted ceiling fan fixture.
-      * Two closets.
-      * Plush neutral taupe carpet.`,
-    img: 'bedroom_three.jpg',
-    adjacentRooms: ['Bedroom_Two','Bathroom_Two']
-  },
-  Laundry_Room: {
-    roomName: 'Laundry_Room',
-    info: `
-      * Inside laundry room (washer and dryer negotiable).
-      * Extra overhead storage cabinets.
-      * Large storage closet.
-      * Linen closet with extra deep shelves.`,
-    img: 'laundry_room.jpg',
-    adjacentRooms: ['Master_Bedroom','Breakfast_Nook', 'Garage']
-  },
-  Garage: {
-    roomName: 'Garage',
-    info: `
-      * Garage room windows for daylight convenience.
-      * Double car garage with anti-slip surface floor.`,
-    img: 'garage.jpg',
-    adjacentRooms: ['Laundry_Room']
-  }
 }

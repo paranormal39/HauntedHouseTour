@@ -7,12 +7,19 @@ import {
   Text,
   View,
   VrButton,
+  NativeModules,
 } from "react-360";
 import { connect, changeRoom } from "./store";
 import house from "./data/houseData";
 
 export default class Buttons extends React.Component {
   clickHandler(roomSelection) {
+    const {AudioModule} = NativeModules;
+    AudioModule.playOneShot({
+      source: asset('footdrags7.wav'),
+      volume: 0.1,
+      
+    });
     changeRoom(roomSelection);
   }
 
@@ -49,6 +56,12 @@ export default class Buttons extends React.Component {
 
 export class HouseInfoPanel extends React.Component {
   render() {
+    const {AudioModule} = NativeModules;
+    AudioModule.playEnvironmental({
+      source: asset('Scifi-Roganmcdougald.mp3'),
+      volume: 0.1,
+      
+    });
     return (
       <View style={styles.panel}>
         <View>
